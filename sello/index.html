@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selo Arqueológico — Equador</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+  </script>
+</head>
+
+<body>
+  <main class="experiencia">
+
+    <header class="cabecalho">
+      <span>Museu do Equador</span>
+      <h1>Selo Arqueológico</h1>
+      <p>Equador pré-colombiano</p>
+    </header>
+
+    <div class="visualizador">
+      <model-viewer
+        src="../models/sello.glb"
+        alt="Selo arqueológico do Equador"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look">
+
+        <button class="ar-button" slot="ar-button">
+          Ver em realidade aumentada
+        </button>
+
+      </model-viewer>
+    </div>
+
+    <p class="instrucao">
+      Arraste para girar • Faça pinça para aproximar
+    </p>
+
+  </main>
+</body>
+</html>
